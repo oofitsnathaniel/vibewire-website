@@ -7,9 +7,9 @@ navigation.addEventListener('click', e => { if (e.target.closest('a')) closeMenu
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && navigation.classList.contains('open')) { closeMenu(); menu.focus(); } });
 window.matchMedia('(min-width: 621px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
 const gallery = {
-  simple: { image: 'assets/simple.png', alt: 'Vibe Wire Simple Mode downloader', caption: 'Simple Mode · Everything you need for your next download.', detail: 'Simple Mode — actual Vibe Wire 0.4.0 Beta. Demonstration destination; no active download.' },
-  advanced: { image: 'assets/advanced.png', alt: 'Vibe Wire Advanced Mode with Downloads and tool navigation', caption: 'Advanced Mode · A shared workspace for your media tools.', detail: 'Advanced Mode — actual Vibe Wire 0.4.0 Beta. Demonstration destination; no active download.' },
-  converter: { image: 'assets/converter.png', alt: 'Vibe Wire Media Converter showing format, quality and output controls', caption: 'Media Converter · Choose the next format for your media.', detail: 'Media Converter — actual Vibe Wire 0.4.0 Beta. Owned demonstration video and destination text; no active conversion.' }
+  simple: { image: 'assets/simple.png', alt: 'Vibe Wire Simple Mode downloader', caption: 'Simple Mode · Everything you need for your next download.', detail: 'Simple Mode — actual Vibe Wire 0.8.0 Beta. Demonstration destination; no active download.' },
+  advanced: { image: 'assets/advanced.png', alt: 'Vibe Wire Advanced Mode with Downloads and tool navigation', caption: 'Advanced Mode · A shared workspace for your media tools.', detail: 'Advanced Mode — actual Vibe Wire 0.8.0 Beta. Demonstration destination; no active download.' },
+  converter: { image: 'assets/converter.png', alt: 'Vibe Wire Media Converter showing format, quality and output controls', caption: 'Media Converter · Choose the next format for your media.', detail: 'Media Converter — actual Vibe Wire 0.8.0 Beta. Demonstration destination; no active conversion.' }
 };
 document.querySelectorAll('[data-gallery]').forEach(button => button.addEventListener('click', () => {
   const selected = gallery[button.dataset.gallery];
@@ -30,3 +30,4 @@ document.querySelectorAll('[data-image]').forEach(button => button.addEventListe
 document.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', e => { if (e.target === dialog) { const box = dialog.getBoundingClientRect(); if (e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom) dialog.close(); } });
 dialog.addEventListener('close', () => { document.body.classList.remove('lightbox-open'); if (previousFocus) previousFocus.focus({ preventScroll: true }); });
+

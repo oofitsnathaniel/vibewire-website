@@ -20,3 +20,4 @@
 @media(max-width:360px){.caption-tag{display:none}.workflow-strip{gap:4px}.workflow-strip>span{font-size:9px;gap:4px}.workflow-strip svg{width:13px}.workflow-strip i{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media(forced-colors:active){.button,.feature-card,.nav-cta,.lightbox-close,.gallery-tab,.visualizer-tile{border:1px solid CanvasText}.hero h1 span,.eyebrow,.text-link{color:LinkText}.status-dot{background:CanvasText}}
+

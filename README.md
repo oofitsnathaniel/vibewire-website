@@ -49,3 +49,7 @@ Offline Mode is unavailable and live MusicBrainz/Cover Art Archive retrieval
 remains unverified. Do not describe Vibe Wire itself as publicly open source.
 
 Public contact: [vibewire.dev@gmail.com](mailto:vibewire.dev@gmail.com).
+
+## 0.8.0 website update
+
+Updated November 10, 2026 for the Avalonia Windows beta. The GitHub beta repository remains private; its release link requires existing access. Public downloads remain coming soon. Screenshots use a demonstration profile; macOS and Linux native acceptance is pending.
